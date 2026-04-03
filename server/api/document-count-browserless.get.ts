@@ -1,4 +1,4 @@
-import { searchDocumentCountWithCrawlee } from "../utils/crawlee";
+import { searchDocumentCountWithBrowserless } from "../utils/browserless";
 import { cleanDomain, domainRegex } from "~~/shared/utils/validation";
 
 export default defineEventHandler(async (event) => {
@@ -30,13 +30,16 @@ export default defineEventHandler(async (event) => {
   };
 
   try {
-    const result = await searchDocumentCountWithCrawlee(domain, (progress) => {
-      send({ type: "progress", progress });
-    });
+    const result = await searchDocumentCountWithBrowserless(
+      domain,
+      (progress) => {
+        send({ type: "progress", progress });
+      },
+    );
 
     send({ type: "result", ...result });
   } catch (error) {
-    console.error("Crawlee error:", error);
+    console.error("Browserless error:", error);
     send({
       type: "error",
       message: "ドキュメント数の取得に失敗しました。再度お試しください。",

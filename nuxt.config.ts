@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     serpApiKey: "",
     googleApiKey: "",
     googleCx: "",
+    browserlessApiToken: "",
   },
 
   shadcn: {

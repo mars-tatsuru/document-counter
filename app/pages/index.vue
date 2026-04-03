@@ -60,7 +60,7 @@ const onSubmit = form.handleSubmit(async (values) => {
   error.value = null;
 
   const domain = cleanDomain(values.targetDomain);
-  const url = `/api/document-count-crawlee?domain=${encodeURIComponent(domain)}`;
+  const url = `/api/document-count-browserless?domain=${encodeURIComponent(domain)}`;
 
   return new Promise<void>((resolve) => {
     const es = new EventSource(url);
