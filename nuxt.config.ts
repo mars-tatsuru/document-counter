@@ -15,12 +15,6 @@ export default defineNuxtConfig({
     googleCx: "",
   },
 
-  nitro: {
-    rollupConfig: {
-      external: ["playwright"],
-    },
-  },
-
   shadcn: {
     /**
      * Prefix for all the imported component

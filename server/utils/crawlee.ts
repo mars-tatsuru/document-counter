@@ -1,3 +1,4 @@
+//CAPTCHA対策の参考：https://zenn.dev/datajournal1/articles/3cab3ce82c89ff
 import { chromium } from "playwright";
 import type { DocumentCountResult } from "~~/shared/types/document-count";
 
