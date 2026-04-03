@@ -119,7 +119,7 @@ export async function searchDocumentCountWithCrawlee(
 
     let totalResults = 0;
     if (text) {
-      console.log("Google Search Result Stats:", text);
+      // console.log("Google Search Result Stats:", text);
       const match = text.match(/約?\s?([\d,]+)\s?件/);
       if (match?.[1]) {
         totalResults = parseInt(match[1].replace(/,/g, ""), 10);
