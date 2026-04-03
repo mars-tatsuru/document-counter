@@ -1,0 +1,39 @@
+{
+  "requestsFinished": 0,
+  "requestsFailed": 1,
+  "requestsRetries": 0,
+  "requestsFailedPerMinute": 1,
+  "requestsFinishedPerMinute": 0,
+  "requestMinDurationMillis": null,
+  "requestMaxDurationMillis": 0,
+  "requestTotalFailedDurationMillis": 33238,
+  "requestTotalFinishedDurationMillis": 0,
+  "crawlerStartedAt": "2026-04-03T06:12:37.254Z",
+  "crawlerFinishedAt": "2026-04-03T06:13:10.609Z",
+  "statsPersistedAt": "2026-04-03T06:13:10.609Z",
+  "crawlerRuntimeMillis": 33468,
+  "crawlerLastStartTimestamp": 1775196757141,
+  "requestRetryHistogram": [
+    1
+  ],
+  "statsId": 0,
+  "requestAvgFailedDurationMillis": 33238,
+  "requestAvgFinishedDurationMillis": null,
+  "requestTotalDurationMillis": 33238,
+  "requestsTotal": 1,
+  "requestsWithStatusCode": {
+    "200": 1
+  },
+  "errors": {
+    "/Users/koiketatsuru/Documents/document-counter/node_modules/@apify/timeout/cjs/index.cjs:64:68": {
+      "missing error code": {
+        "Error": {
+          "requestHandler timed out after 30 seconds.": {
+            "count": 1
+          }
+        }
+      }
+    }
+  },
+  "retryErrors": {}
+}
